@@ -62,3 +62,6 @@ input:not([type=radio]),textarea,select{border-radius:var(--control-radius);min-
 @media(max-width:960px){main{grid-template-columns:1fr!important;width:calc(100% - 24px)!important;padding:12px 0}header{padding:14px}nav{padding:8px 12px}#workspace,aside{padding:18px}}
 @media(max-width:600px){.head-actions{width:100%}.head-actions button,.head-actions .button{flex:1 1 auto;text-align:center;font-size:12px;padding:9px}#workspace,aside{padding:15px}.fields{grid-template-columns:1fr}nav button{font-size:12px;padding:9px 10px}}
 @media(prefers-reduced-motion:reduce){button,.button{transition:none}}
+
+/* V8 — Direção fotográfica multipla */
+.photo-direction-list{display:grid;gap:9px;margin:12px 0}.photo-direction-row{display:flex;align-items:center;gap:10px;border:1px solid var(--line);padding:8px;border-radius:8px;min-width:0}.photo-direction-row img{width:65px;height:55px;object-fit:cover;border-radius:4px}.photo-direction-row span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px}.photo-direction-row button{padding:7px 9px;cursor:pointer;flex-shrink:0}.photo-direction-row button:disabled{opacity:.35;cursor:default}@media(max-width:600px){.photo-direction-row{flex-wrap:wrap}.photo-direction-row span{flex-basis:calc(100% - 85px)}}
