@@ -11,3 +11,12 @@
 .grid-slot img.logo-image{object-fit:contain;padding:5%;background:transparent}
 .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:800px){.cards{grid-template-columns:1fr}}
+
+/* V8.0 palette alignment fix: narrow slots stay centered */
+.grid-slot.palette-slot{align-items:center;justify-content:center;text-align:center;padding:5%;gap:clamp(4px,1vw,12px)}
+.grid-slot.palette-slot b{font-size:clamp(7px,1vw,13px);line-height:1.2;white-space:nowrap;max-width:100%}
+.grid-slot.palette-slot .swatches{display:flex;justify-content:center;align-items:center;width:100%;gap:clamp(3px,.6vw,9px)}
+.grid-slot.palette-slot .swatches span{flex:0 1 20px;width:min(20px,22%);aspect-ratio:1;border-radius:50%;min-width:0}
+.grid-slot.palette-compact{padding:4%;gap:clamp(3px,.7vw,10px)}
+.grid-slot.palette-compact b{font-size:clamp(6px,.75vw,11px);letter-spacing:-.02em}
+.grid-slot.palette-compact .swatches span{flex:0 1 15px;width:min(15px,24%)}

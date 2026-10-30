@@ -1,15 +1,16 @@
-MŌODER V8.0 - SMART GRID UNIFICADO
+MŌODER V8.0 — CORREÇÃO PALETA AUTOMÁTICA
 
-No repositorio de TESTE mooder-v8-beta, substituir APENAS:
-- workspace.html
-- workspace.css
+SUBSTITUIR APENAS:
 - smart-grid.js
+- workspace.css
 
-Nao alterar index.html, app.js, style.css, workspace.js, mockups/ ou bibliotecas.
+Ajustes:
+- Color Palette centrada e legível em slots estreitos (incluindo Event Showcase).
+- Cor principal e secundária extraídas automaticamente do logótipo carregado (PNG, JPG, WebP, SVG).
+- Cor de contraste automática, preta ou branca, com base no fundo da composição.
+- Cores continuam editáveis manualmente.
 
-Smart Grid: 4 templates existentes, upload de imagens e logotipo, cores principal/secundaria/contraste/fundo, zoom, swap, PNG e PDF, guardar projeto via botao.
-Brand Identity: mantido separado no index.html.
-
-Nota: Os editores Moodboard e Event antigos permanecem no codigo por compatibilidade dos projetos beta, mas estao ocultos. O ZIP unificado com Brand Identity ainda nao foi implementado.
-
-Esta atualizacao nao deve ser instalada no repositorio principal antes de testar.
+NOTAS:
+- A extração usa pixels visíveis e pode precisar de ajuste manual em logótipos complexos.
+- Não altera o Brand Identity antigo.
+- Depois do upload, atualizar com Ctrl+Shift+R.
