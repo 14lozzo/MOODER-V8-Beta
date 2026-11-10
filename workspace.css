@@ -20,3 +20,9 @@
 .grid-slot.palette-compact{padding:4%;gap:clamp(3px,.7vw,10px)}
 .grid-slot.palette-compact b{font-size:clamp(6px,.75vw,11px);letter-spacing:-.02em}
 .grid-slot.palette-compact .swatches span{flex:0 1 15px;width:min(15px,24%)}
+
+/* Apparel Studio integration UI refinements */
+#home .panel .actions > button,#home .panel .actions > label.button{width:205px;min-height:44px;min-width:0;display:inline-flex;align-items:center;justify-content:center;text-align:center;margin:0;padding:10px 12px;}
+#grid .sectionhead .actions > button{width:145px;min-height:44px;text-align:center;}
+#grid .grid-upload-side{margin:0;width:100%;min-height:44px;display:flex;align-items:center;justify-content:center;background:#27272d;border:1px solid #45454d;}
+@media(max-width:580px){#home .panel .actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));}#home .panel .actions > button,#home .panel .actions > label.button{width:100%;}#grid .sectionhead .actions > button{width:135px;}}
