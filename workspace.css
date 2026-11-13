@@ -26,3 +26,28 @@
 #grid .sectionhead .actions > button{width:145px;min-height:44px;text-align:center;}
 #grid .grid-upload-side{margin:0;width:100%;min-height:44px;display:flex;align-items:center;justify-content:center;background:#27272d;border:1px solid #45454d;}
 @media(max-width:580px){#home .panel .actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));}#home .panel .actions > button,#home .panel .actions > label.button{width:100%;}#grid .sectionhead .actions > button{width:135px;}}
+
+/* MOODER UI/UX V1.1 — shared workspace visual foundation */
+:root{--mooder-bg:#09090b;--mooder-surface:#161619;--mooder-border:#303036;--mooder-accent:#6366f1;--mooder-text:#f4f4f5;--mooder-muted:#a1a1aa}
+header{position:sticky;top:0;z-index:50;backdrop-filter:blur(16px);background:rgba(18,18,21,.94);box-shadow:0 6px 24px #0002}
+header .logo{line-height:1.15;white-space:nowrap}
+header nav{align-items:center}
+header nav button,header nav a{min-height:40px;transition:background .18s ease,border-color .18s ease,transform .18s ease}
+header nav button:hover,header nav a:hover{border-color:#7777a8}
+header nav button:focus-visible,header nav a:focus-visible,button:focus-visible,.button:focus-visible,.cards>a:focus-visible{outline:2px solid #a5a7ff;outline-offset:3px}
+main{padding-top:32px;padding-bottom:60px}
+.intro{padding:clamp(32px,5vw,72px) 0 38px;max-width:850px}
+.intro span,.module-kicker{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#a5a7ff}
+.intro h1{font-size:clamp(34px,5vw,60px);line-height:1.06;letter-spacing:-.055em;margin:18px 0}
+.intro p{max-width:620px;line-height:1.65;color:#b7b7c1}
+.cards>*{min-height:154px;justify-content:space-between;transition:border-color .18s ease,transform .18s ease,background .18s ease}
+.cards>*:hover{transform:translateY(-2px);border-color:#7777a8;background:#202026}
+.cards strong{font-size:17px;letter-spacing:-.02em}
+.cards span{font-size:13px;line-height:1.55;color:#b4b4c0}
+.panel,.grid-side,.controls{box-shadow:0 8px 32px #0002}
+.sectionhead{margin-bottom:22px}
+.sectionhead h1{font-size:clamp(26px,3vw,38px)}
+.sectionhead p{line-height:1.55}
+.module-kicker{margin-bottom:8px}
+button:disabled{opacity:.55;cursor:not-allowed}
+@media(max-width:800px){header{position:relative;gap:12px}header nav{gap:6px}main{padding-top:20px}.intro{padding:32px 0}.cards>*{min-height:130px}}
