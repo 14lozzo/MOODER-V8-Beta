@@ -73,3 +73,14 @@ button:disabled{opacity:.55;cursor:not-allowed}
 .mooder-global-topbar .mooder-global-nav>*{display:inline-flex;align-items:center;justify-content:center;min-height:40px;box-sizing:border-box;margin:0;line-height:1.2}
 .mooder-global-topbar #state{flex:0 0 auto}
 @media(max-width:800px){.mooder-global-topbar{flex-wrap:wrap}.mooder-global-topbar .mooder-global-nav{order:3;flex:1 0 100%;width:100%;overflow-x:auto}}
+
+/* MOODER shared UI accent — 2026-11-15 */
+:root{--mooder-accent:#FE2E4B;--mooder-accent-hover:#e51e3d}
+.mooder-global-topbar .mooder-global-nav .active,.mooder-global-topbar .mooder-global-nav [aria-current=page],.primary,#grid .grid-export-menu summary{background:#FE2E4B!important;border-color:#FE2E4B!important;color:#fff!important}
+.mooder-global-topbar .mooder-global-nav button:hover,.mooder-global-topbar .mooder-global-nav a:hover{border-color:#FE2E4B}
+.mooder-global-topbar :focus-visible,button:focus-visible,.button:focus-visible,.cards>a:focus-visible{outline-color:#FE2E4B!important}
+.intro span,.module-kicker{color:#FE2E4B}
+.cards>*:hover,#grid .grid-back-home:hover{border-color:#FE2E4B}
+#grid .grid-layout-options button[aria-pressed="true"]{background:#382027;border-color:#FE2E4B;box-shadow:inset 0 0 0 1px #FE2E4B}
+#grid .grid-slot.active{outline-color:#FE2E4B}
+#grid .grid-thumb.active{border-color:#FE2E4B}
