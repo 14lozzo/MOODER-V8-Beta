@@ -57,3 +57,11 @@ button:disabled{opacity:.55;cursor:not-allowed}
 
 /* Smart Grid UX V1.2.1: direct Home navigation and dropdown-only layout */
 #grid .grid-back-home{display:inline-flex;margin:0 0 16px;padding:9px 13px;background:#222226;border:1px solid #45454d;color:#e4e4e7;border-radius:8px;font-size:12px}#grid .grid-back-home:hover{background:#34343d;border-color:#a5a7ff}
+
+/* MOODER shared navigation — workspace */
+.mooder-global-topbar{position:sticky;top:0;z-index:100;min-height:68px;background:#121215;border-bottom:1px solid #29292d}
+.mooder-global-nav{align-items:center}
+.mooder-global-nav button,.mooder-global-nav a{white-space:nowrap;min-height:38px}
+.mooder-global-nav .active,.mooder-global-nav [aria-current=page]{background:#6366f1;color:#fff;border-color:#6366f1}
+.mooder-global-topbar :focus-visible{outline:2px solid #a5b4fc;outline-offset:3px}
+@media(max-width:800px){.mooder-global-topbar{gap:10px}.mooder-global-nav{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin}.mooder-global-nav>*{flex:0 0 auto}}
