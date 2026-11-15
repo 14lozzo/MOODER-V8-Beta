@@ -6,7 +6,7 @@ const eventSizes={post:[1080,1350],story:[1080,1920],poster:[1191,1684],invite:[
 function status(s){$('state').textContent=s;}
 function safe(s){return String(s||'projeto').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-zA-Z0-9_-]+/g,'-').replace(/^-+|-+$/g,'').slice(0,65)||'projeto'}
 function show(v){document.querySelectorAll('.view').forEach(x=>x.classList.toggle('active',x.id===v));document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x.dataset.view===v));document.title=v==='grid'?'MOODER SMART GRID by Rogue':'MOODER by Rogue';if(v==='mood')drawMood();if(v==='event')drawEvent();}
-document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>show(b.dataset.view));document.querySelectorAll('[data-jump]').forEach(b=>b.onclick=()=>show(b.dataset.jump));
+document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{show(b.dataset.view);if(b.dataset.view==='home'||b.dataset.view==='grid')history.replaceState(null,'','#'+b.dataset.view);});document.querySelectorAll('[data-jump]').forEach(b=>b.onclick=()=>show(b.dataset.jump));
 if(location.hash==='#grid')show('grid');
 window.addEventListener('hashchange',()=>{if(location.hash==='#grid')show('grid');else if(location.hash==='#home')show('home')});
 function getImage(src){if(!src)return null;if(loadedImages.has(src))return loadedImages.get(src);let img=new Image();img.onload=()=>{drawMood();drawEvent()};img.src=src;loadedImages.set(src,img);return img;}
