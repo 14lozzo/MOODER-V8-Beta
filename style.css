@@ -77,3 +77,10 @@ input:not([type=radio]),textarea,select{border-radius:var(--control-radius);min-
 .primary:hover,:root[data-theme="dark"] .primary:hover{background:#e51e3d!important;border-color:#e51e3d!important}
 button:focus-visible,.button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible,.mooder-global-nav a:focus-visible{outline-color:#FE2E4B!important}
 .color-tools summary::before{color:#FE2E4B}
+
+/* Brand Factory — compact JSON upload aligned with toolbar */
+.head-actions .mooder-open-json{display:inline-flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:12px;min-height:40px!important;height:40px!important;width:355px;max-width:100%;padding:5px 10px!important;margin:0!important;white-space:nowrap;box-sizing:border-box}
+.head-actions .mooder-open-json span{flex:0 0 auto;font-size:12px}
+.head-actions .mooder-open-json input[type="file"]{display:block!important;min-height:0!important;height:29px!important;max-width:230px;width:230px!important;padding:0!important;margin:0!important;font-size:11px!important;border:0!important;background:transparent!important;color:inherit!important;overflow:hidden}
+.head-actions .mooder-open-json input[type="file"]::file-selector-button{height:28px;margin-right:7px;padding:3px 9px;background:#34343b;color:#f4f4f5;border:1px solid #52525b;border-radius:5px;cursor:pointer}
+@media(max-width:600px){.head-actions .mooder-open-json{flex:1 1 100%;width:100%}.head-actions .mooder-open-json input[type="file"]{flex:1;min-width:0}}
