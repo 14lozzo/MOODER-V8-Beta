@@ -15,3 +15,18 @@ body .apparel-header .apparel-actions #pdfBtn{background:#FE2E4B!important;borde
 body .apparel-header .apparel-actions #pdfBtn:hover{background:#e51e3d!important;border-color:#e51e3d!important}
 body .apparel-header a:focus-visible,body .apparel-header button:focus-visible{outline:2px solid #FE2E4B!important;outline-offset:2px!important}
 @media(max-width:900px){body .apparel-header .mooder-global-topbar{flex-wrap:wrap!important;gap:10px!important}body .apparel-header .mooder-global-nav{order:3!important;flex:1 0 100%!important;overflow-x:auto!important}body .apparel-header .apparel-actions{justify-content:flex-start!important;overflow-x:auto!important}}
+
+/* Shared MOODER canvas, typography and editor surfaces; artwork remains untouched */
+body.dark{--bg:#09090b!important;--panel:#161619!important;--ink:#f4f4f5!important;--muted:#a1a1aa!important;--line:#303036!important;--accent:#FE2E4B!important;background:#09090b!important;color:#f4f4f5!important}
+body.dark,body.dark button,body.dark input,body.dark select,body.dark textarea{font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif!important}
+body.dark .layout{background:#09090b!important}
+body.dark .layout>aside,body.dark .layout>.workspace{background:#161619!important;border-color:#303036!important}
+body.dark .layout h2{font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif!important;font-weight:750!important;font-size:25px!important;letter-spacing:-.04em!important;line-height:1.2!important}
+body.dark .layout .eyebrow{font-family:Inter,system-ui,Arial,sans-serif!important}
+body.dark .layout button:not(.primary){background:#222226!important;border-color:#38383f!important;color:#e4e4e7!important}
+body.dark .layout .tabs button.active{background:#FE2E4B!important;border-color:#FE2E4B!important;color:#fff!important}
+body.dark .layout input:not([type=color]):not([type=file]),body.dark .layout select,body.dark .layout textarea{background:#242429!important;border-color:#44444d!important;color:#f4f4f5!important}
+body.dark .layout .drawing{background:#fff!important;color:#252723!important}
+body.dark .layout .drawing svg,body.dark .layout .drawing .caption{color:#252723!important}
+body.dark .layout .notice{background:#202025!important;border-color:#303036!important;color:#d4d4d8!important}
+body.dark .footer{background:#09090b!important;color:#a1a1aa!important}
