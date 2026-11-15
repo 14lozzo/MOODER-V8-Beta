@@ -1,0 +1,17 @@
+/* MOODER global navigation and accent — Apparel Studio V8 */
+:root{--mooder-accent:#FE2E4B!important}
+body .apparel-header{display:flex!important;flex-direction:column!important;align-items:stretch!important;padding:0!important;background:#121215!important;border-bottom:1px solid #29292d!important}
+body .apparel-header .mooder-global-topbar{position:relative!important;display:flex!important;align-items:center!important;flex-wrap:nowrap!important;gap:20px!important;width:100%!important;min-height:70px!important;padding:12px 24px!important;background:#121215!important;border-bottom:1px solid #29292d!important}
+body .apparel-header .mooder-global-logo{display:inline-flex!important;flex-direction:column!important;justify-content:center!important;flex:0 0 auto!important;font-family:Inter,system-ui,Arial,sans-serif!important;font-size:19px!important;font-weight:800!important;line-height:1.15!important;letter-spacing:.1em!important;color:#fff!important;text-decoration:none!important}
+body .apparel-header .mooder-global-logo small{font:400 10px/1.2 Inter,Arial,sans-serif!important;letter-spacing:0!important;color:#aaa!important}
+body .apparel-header .mooder-global-nav{display:flex!important;align-items:center!important;flex:1!important;gap:7px!important;min-width:0!important;margin:0!important;padding:0!important;background:transparent!important;border:0!important}
+body .apparel-header .mooder-global-nav a{display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;min-height:40px!important;margin:0!important;padding:10px 13px!important;border:1px solid #38383f!important;border-radius:7px!important;background:#222226!important;color:#e4e4e7!important;font:500 14px/1.2 Inter,system-ui,Arial,sans-serif!important;text-decoration:none!important;white-space:nowrap!important}
+body .apparel-header .mooder-global-nav a:hover{border-color:#FE2E4B!important}
+body .apparel-header .mooder-global-nav a.active,body .apparel-header .mooder-global-nav a[aria-current="page"]{background:#FE2E4B!important;border-color:#FE2E4B!important;color:white!important}
+body .apparel-header .mooder-module-label{margin-left:auto!important;color:#a1a1aa!important}
+body .apparel-header .apparel-actions{display:flex!important;align-items:center!important;justify-content:flex-end!important;flex-wrap:wrap!important;gap:7px!important;width:100%!important;margin:0!important;padding:10px 24px!important;background:#121215!important;border-top:0!important}
+body .apparel-header .apparel-actions button{min-height:40px!important;box-sizing:border-box!important;border-radius:7px!important}
+body .apparel-header .apparel-actions #pdfBtn{background:#FE2E4B!important;border-color:#FE2E4B!important;color:white!important}
+body .apparel-header .apparel-actions #pdfBtn:hover{background:#e51e3d!important;border-color:#e51e3d!important}
+body .apparel-header a:focus-visible,body .apparel-header button:focus-visible{outline:2px solid #FE2E4B!important;outline-offset:2px!important}
+@media(max-width:900px){body .apparel-header .mooder-global-topbar{flex-wrap:wrap!important;gap:10px!important}body .apparel-header .mooder-global-nav{order:3!important;flex:1 0 100%!important;overflow-x:auto!important}body .apparel-header .apparel-actions{justify-content:flex-start!important;overflow-x:auto!important}}
