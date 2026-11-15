@@ -30,3 +30,21 @@ body.dark .layout .drawing{background:#fff!important;color:#252723!important}
 body.dark .layout .drawing svg,body.dark .layout .drawing .caption{color:#252723!important}
 body.dark .layout .notice{background:#202025!important;border-color:#303036!important;color:#d4d4d8!important}
 body.dark .footer{background:#09090b!important;color:#a1a1aa!important}
+
+/* MOODER UI v3: selectors verified against actual Apparel Studio HTML */
+html body{background:#09090b!important;color:#f4f4f5!important;font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif!important}
+html body.dark{--bg:#09090b!important;--panel:#161619!important;--ink:#f4f4f5!important;--muted:#a1a1aa!important;--line:#303036!important;--accent:#FE2E4B!important}
+html body main.layout{background:#09090b!important}
+html body main.layout>aside,html body main.layout>section.workspace,html body main.layout>aside.right{background:#161619!important;border:1px solid #303036!important;color:#f4f4f5!important}
+html body main.layout h2,html body main.layout h3{font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif!important;letter-spacing:-.035em!important}
+html body main.layout h2{font-size:25px!important;font-weight:750!important;line-height:1.2!important}
+html body main.layout .eyebrow,html body main.layout label,html body main.layout .hint{font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif!important}
+html body main.layout button,html body main.layout input,html body main.layout select,html body main.layout textarea{font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif!important}
+html body main.layout .tabs button:not(.active){background:#222226!important;border-color:#38383f!important;color:#e4e4e7!important}
+html body main.layout .tabs button.active{background:#FE2E4B!important;border-color:#FE2E4B!important;color:#fff!important}
+html body main.layout .drawing{background:#fff!important;color:#252723!important}
+html body main.layout .drawing .caption{color:#252723!important}
+html body main.layout .notice{background:#202025!important;border-color:#303036!important;color:#d4d4d8!important}
+html body main.layout .preview{background:#222226!important;border-color:#303036!important;color:#f4f4f5!important}
+html body .footer{background:#09090b!important;color:#a1a1aa!important}
+@media print{html body,html body main.layout,html body main.layout>section.workspace{background:#fff!important;color:#000!important}}
