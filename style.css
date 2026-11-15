@@ -68,3 +68,12 @@ input:not([type=radio]),textarea,select{border-radius:var(--control-radius);min-
 
 /* MOODER global navigation — Brand Identity, preserve editor toolbar below */
 .mooder-global-topbar{position:sticky;top:0;z-index:100;display:flex;align-items:center;gap:24px;padding:17px 24px;background:#121215;color:#f4f4f5;border-bottom:1px solid #29292d;font:14px Inter,system-ui,sans-serif;flex-wrap:wrap}.mooder-global-logo{font-size:19px;font-weight:800;letter-spacing:.1em;line-height:1.15;color:#fff;text-decoration:none;white-space:nowrap}.mooder-global-logo small{display:block;color:#aaa;font-size:10px;font-weight:400;letter-spacing:0}.mooder-global-nav{flex:1;display:flex;gap:7px;align-items:center;flex-wrap:wrap;overflow:visible;background:transparent;border:0;padding:0}.mooder-global-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:10px 13px;background:#222226;color:#e4e4e7;border:1px solid #38383f;border-radius:7px;text-decoration:none;font:inherit;white-space:nowrap}.mooder-global-nav a:hover{background:#35353c}.mooder-global-nav a.active{background:#6366f1;border-color:#6366f1;color:white}.mooder-global-nav a:focus-visible{outline:2px solid #a5a7ff;outline-offset:3px}.mooder-global-state{font-size:12px;color:#a1a1aa}@media(max-width:800px){.mooder-global-topbar{position:relative;padding:14px;gap:12px}.mooder-global-nav{order:3;width:100%;overflow:auto;flex-wrap:nowrap}.mooder-global-nav a{font-size:12px;padding:8px}}
+
+/* MOODER shared UI accent — 2026-11-15 */
+:root,:root[data-theme="dark"]{--accent:#FE2E4B;--mooder-accent:#FE2E4B}
+.mooder-global-topbar .mooder-global-nav a.active,.mooder-global-topbar .mooder-global-nav a[aria-current="page"]{background:#FE2E4B!important;border-color:#FE2E4B!important;color:#fff!important}
+.mooder-global-topbar .mooder-global-nav a:hover{border-color:#FE2E4B}
+.primary,:root[data-theme="dark"] .primary{background:#FE2E4B!important;border-color:#FE2E4B!important;color:#fff!important}
+.primary:hover,:root[data-theme="dark"] .primary:hover{background:#e51e3d!important;border-color:#e51e3d!important}
+button:focus-visible,.button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible,.mooder-global-nav a:focus-visible{outline-color:#FE2E4B!important}
+.color-tools summary::before{color:#FE2E4B}
