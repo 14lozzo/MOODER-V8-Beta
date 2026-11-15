@@ -84,3 +84,15 @@ button:focus-visible,.button:focus-visible,input:focus-visible,textarea:focus-vi
 .head-actions .mooder-open-json input[type="file"]{display:block!important;min-height:0!important;height:29px!important;max-width:230px;width:230px!important;padding:0!important;margin:0!important;font-size:11px!important;border:0!important;background:transparent!important;color:inherit!important;overflow:hidden}
 .head-actions .mooder-open-json input[type="file"]::file-selector-button{height:28px;margin-right:7px;padding:3px 9px;background:#34343b;color:#f4f4f5;border:1px solid #52525b;border-radius:5px;cursor:pointer}
 @media(max-width:600px){.head-actions .mooder-open-json{flex:1 1 100%;width:100%}.head-actions .mooder-open-json input[type="file"]{flex:1;min-width:0}}
+
+/* Shared MOODER dark canvas and typography — Brand Factory only, not PDF previews */
+:root[data-theme="dark"]{--bg:#09090b;--ink:#f4f4f5;--line:#303036;--muted:#a1a1aa;--accent:#FE2E4B}
+:root[data-theme="dark"] body{background:#09090b!important;color:#f4f4f5!important;font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif!important}
+:root[data-theme="dark"] header,:root[data-theme="dark"] #tabs{background:#121215!important;border-color:#29292d!important}
+:root[data-theme="dark"] #workspace,:root[data-theme="dark"] aside{background:#161619!important;border-color:#303036!important}
+:root[data-theme="dark"] #workspace h1,:root[data-theme="dark"] #workspace h2{font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif!important}
+:root[data-theme="dark"] button:not(.primary),:root[data-theme="dark"] .button{background:#222226!important;color:#e4e4e7!important;border-color:#38383f!important}
+:root[data-theme="dark"] #tabs button{background:transparent!important;border-color:transparent!important}
+:root[data-theme="dark"] #tabs button.active{background:#292930!important;color:#fafafa!important}
+:root[data-theme="dark"] input:not([type=color]),:root[data-theme="dark"] textarea,:root[data-theme="dark"] select{background:#242429!important;border-color:#44444d!important;color:#f4f4f5!important}
+:root[data-theme="dark"] .notice{background:#202025!important;color:#d4d4d8!important}
