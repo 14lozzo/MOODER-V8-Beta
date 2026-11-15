@@ -65,3 +65,11 @@ button:disabled{opacity:.55;cursor:not-allowed}
 .mooder-global-nav .active,.mooder-global-nav [aria-current=page]{background:#6366f1;color:#fff;border-color:#6366f1}
 .mooder-global-topbar :focus-visible{outline:2px solid #a5b4fc;outline-offset:3px}
 @media(max-width:800px){.mooder-global-topbar{gap:10px}.mooder-global-nav{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin}.mooder-global-nav>*{flex:0 0 auto}}
+
+/* Navigation alignment fix */
+.mooder-global-topbar{display:flex;align-items:center;flex-wrap:nowrap;gap:20px}
+.mooder-global-topbar .mooder-global-logo{display:inline-flex;flex-direction:column;align-items:flex-start;justify-content:center;flex:0 0 auto;line-height:1.15;margin:0}
+.mooder-global-topbar .mooder-global-nav{display:flex;align-items:center;gap:7px;flex:1;min-width:0;margin:0;padding:0;border:0;background:transparent}
+.mooder-global-topbar .mooder-global-nav>*{display:inline-flex;align-items:center;justify-content:center;min-height:40px;box-sizing:border-box;margin:0;line-height:1.2}
+.mooder-global-topbar #state{flex:0 0 auto}
+@media(max-width:800px){.mooder-global-topbar{flex-wrap:wrap}.mooder-global-topbar .mooder-global-nav{order:3;flex:1 0 100%;width:100%;overflow-x:auto}}
